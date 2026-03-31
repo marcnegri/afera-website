@@ -1,17 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Afera — The CRM that doesn't make you want to cry. Manage contacts, deals, accounting and digital marketing in one place." />
-    <title>Afera — CRM that works as hard as you do</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afera — The CRM that doesn't make you want to cry</title>
+  <meta name="description" content="Afera brings contacts, deals, accounting, and marketing into one place." />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ NAVBAR -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="logo.svg" alt="Afera" width="36" height="36" />
+      <span class="nav-logo-text">Afera</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#features"  data-i18n="nav.features">Features</a>
+      <a href="#contacts"  data-i18n="nav.contacts">Contacts</a>
+      <a href="#deals"     data-i18n="nav.deals">Deals</a>
+      <a href="#marketing" data-i18n="nav.marketing">Marketing</a>
+      <a href="#pricing"   data-i18n="nav.pricing">Pricing</a>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+      </div>
+      <a href="#pricing" class="btn-secondary nav-btn-secondary" data-i18n="nav.login">Log in</a>
+      <a href="#pricing" class="btn-primary nav-btn-primary"     data-i18n="nav.tryfree">Try for free ✨</a>
+    </div>
+
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span data-i18n="hero.badge">Now with Digital Marketing built in</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span data-i18n="hero.title1">Your contacts called.</span><br />
+      <span data-i18n="hero.title2">They want a</span>
+      <span class="highlight" data-i18n="hero.titleHighlight">better CRM</span><span data-i18n="hero.title3">.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      <span data-i18n="hero.subtitle">Afera brings contacts, deals, accounting, and marketing into one place.</span>
+      <br /><span class="hero-subtitle-small" data-i18n="hero.subtitleSmall">No PhD in spreadsheets required.</span>
+    </p>
+
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary hero-cta" data-i18n="hero.startFree">Start for free ✨</a>
+      <button class="btn-secondary" id="watch-demo-btn" data-i18n="hero.watchDemo">Watch demo ▶</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value" data-i18n="hero.stat1Value">∞</div>
+        <div class="stat-label" data-i18n="hero.stat1Label">Contacts</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" data-i18n="hero.stat2Value">5</div>
+        <div class="stat-label" data-i18n="hero.stat2Label">Tools in one</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" data-i18n="hero.stat3Value">0</div>
+        <div class="stat-label" data-i18n="hero.stat3Label">Excel files needed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" data-i18n="hero.stat4Value">😌</div>
+        <div class="stat-label" data-i18n="hero.stat4Label">Stress level</div>
+      </div>
+    </div>
+
+    <div class="hero-screenshot" id="demo">
+      <div class="screenshot-mock-bar">
+        <div class="mock-dot red"></div>
+        <div class="mock-dot yellow"></div>
+        <div class="mock-dot green"></div>
+        <div class="mock-url"></div>
+      </div>
+      <img src="screenshots/dashboard.png" data-i18n-attr="alt:hero.screenshotAlt" alt="Afera Dashboard" class="dashboard-img" />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ FEATURES OVERVIEW -->
+<section class="features-overview" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-i18n="features.label">Everything in one place</span>
+      <h2 class="section-title" id="features-title">Stop switching tabs.<br>Start closing deals.</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle"></p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card card" style="--accent:#ff6b35">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title" data-i18n="features.dashboard.title">Dashboard</h3>
+        <p class="feature-desc"   data-i18n="features.dashboard.desc"></p>
+        <a href="#contacts" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
+      </div>
+      <div class="feature-card card" style="--accent:#3b82f6">
+        <div class="feature-icon">👥</div>
+        <h3 class="feature-title" data-i18n="features.contacts.title">Contacts</h3>
+        <p class="feature-desc"   data-i18n="features.contacts.desc"></p>
+        <a href="#contacts" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
+      </div>
+      <div class="feature-card card" style="--accent:#10b981">
+        <div class="feature-icon">🤝</div>
+        <h3 class="feature-title" data-i18n="features.deals.title">Deals</h3>
+        <p class="feature-desc"   data-i18n="features.deals.desc"></p>
+        <a href="#deals" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
+      </div>
+      <div class="feature-card card" style="--accent:#f59e0b">
+        <div class="feature-icon">💰</div>
+        <h3 class="feature-title" data-i18n="features.accounting.title">Accounting</h3>
+        <p class="feature-desc"   data-i18n="features.accounting.desc"></p>
+        <a href="#accounting" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
+      </div>
+      <div class="feature-card card" style="--accent:#8b5cf6">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title" data-i18n="features.marketing.title">Digital Marketing</h3>
+        <p class="feature-desc"   data-i18n="features.marketing.desc"></p>
+        <a href="#marketing" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ CONTACTS -->
+<section class="contacts-section" id="contacts">
+  <div class="container">
+    <div class="split-layout">
+      <div class="split-content">
+        <span class="section-label" data-i18n="contacts.label">👥 Contacts</span>
+        <h2 class="section-title">
+          <span data-i18n="contacts.title1">Your Rolodex,</span><br />
+          <span data-i18n="contacts.title2">but from this decade.</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="contacts.subtitle"></p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><div class="fi-title" data-i18n="contacts.features.readiness.title">Sales readiness levels</div><div class="fi-desc" data-i18n="contacts.features.readiness.desc"></div></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><div class="fi-title" data-i18n="contacts.features.activity.title">Activity tracking</div><div class="fi-desc" data-i18n="contacts.features.activity.desc"></div></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><div class="fi-title" data-i18n="contacts.features.deals.title">Deal association</div><div class="fi-desc" data-i18n="contacts.features.deals.desc"></div></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><div class="fi-title" data-i18n="contacts.features.export.title">Bulk operations & CSV export</div><div class="fi-desc" data-i18n="contacts.features.export.desc"></div></div>
+          </div>
+        </div>
+
+        <div class="readiness-preview">
+          <div class="rp-label" data-i18n="contacts.readinessLabel">Sales Readiness Tracker</div>
+          <div class="rp-badges">
+            <span class="rp-badge" style="background:#eff6ff;color:#3b82f6" data-i18n="contacts.badges.cold">🥶 Cold</span>
+            <span class="rp-badge" style="background:#f5f3ff;color:#8b5cf6" data-i18n="contacts.badges.exploring">🔍 Exploring</span>
+            <span class="rp-badge" style="background:#fffbeb;color:#d97706" data-i18n="contacts.badges.interested">👀 Interested</span>
+            <span class="rp-badge" style="background:#fff7ed;color:#ea580c" data-i18n="contacts.badges.evaluating">⚖️ Evaluating</span>
+            <span class="rp-badge" style="background:#ecfdf5;color:#10b981" data-i18n="contacts.badges.ready">✅ Ready</span>
+            <span class="rp-badge" style="background:#fff3ee;color:#ff6b35" data-i18n="contacts.badges.buyer">💰 Buyer</span>
+          </div>
+          <div class="rp-hint" data-i18n="contacts.readinessHint">Know exactly who to call today</div>
+        </div>
+      </div>
+
+      <div class="split-visual">
+        <img src="screenshots/contacts.png" alt="Contacts" class="section-screenshot" />
+        <div class="floating-card fc-1">
+          <div class="fc-icon">🔍</div>
+          <div>
+            <div class="fc-title" data-i18n="contacts.floatSearch">Smart Search</div>
+            <div class="fc-sub"   data-i18n="contacts.floatSearchSub">Find anyone in seconds</div>
+          </div>
+        </div>
+        <div class="floating-card fc-2">
+          <div class="fc-icon">📤</div>
+          <div>
+            <div class="fc-title" data-i18n="contacts.floatExport">CSV Export</div>
+            <div class="fc-sub"   data-i18n="contacts.floatExportSub">Your data, your way</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ DEALS -->
+<section class="deals-section" id="deals">
+  <div class="container">
+    <div class="split-layout reversed">
+      <div class="split-visual">
+        <img src="screenshots/deals.png" alt="Deals" class="section-screenshot" />
+        <div class="kanban-preview">
+          <div class="kanban-col">
+            <div class="kanban-col-header" style="color:#f59e0b" data-i18n="deals.kanban.pending">⏳ Pending</div>
+            <div class="kanban-item"><div class="ki-dot" style="background:#f59e0b"></div><div class="ki-text">Acme Corp</div></div>
+            <div class="kanban-item"><div class="ki-dot" style="background:#f59e0b"></div><div class="ki-text">Studio Bleu</div></div>
+          </div>
+          <div class="kanban-col">
+            <div class="kanban-col-header" style="color:#10b981" data-i18n="deals.kanban.signed">✅ Signed</div>
+            <div class="kanban-item"><div class="ki-dot" style="background:#10b981"></div><div class="ki-text">TechStart AG</div></div>
+            <div class="kanban-item"><div class="ki-dot" style="background:#10b981"></div><div class="ki-text">Maison Lacroix</div></div>
+          </div>
+          <div class="kanban-col">
+            <div class="kanban-col-header" style="color:#ef4444" data-i18n="deals.kanban.lost">❌ Lost</div>
+            <div class="kanban-item"><div class="ki-dot" style="background:#ef4444"></div><div class="ki-text">Old Prospect</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-content">
+        <span class="section-label" data-i18n="deals.label">🤝 Deals</span>
+        <h2 class="section-title">
+          <span data-i18n="deals.title1">Pipeline dreams.</span><br />
+          <span data-i18n="deals.title2">Actual revenue.</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="deals.subtitle"></p>
+
+        <div class="deal-stats">
+          <div class="deal-stat">
+            <div class="ds-icon">📈</div>
+            <div class="ds-value" data-i18n="deals.stats.kanban">Kanban</div>
+            <div class="ds-label" data-i18n="deals.stats.kanbanLabel">Visual Board</div>
+          </div>
+          <div class="deal-stat">
+            <div class="ds-icon">📉</div>
+            <div class="ds-value" data-i18n="deals.stats.charts">Charts</div>
+            <div class="ds-label" data-i18n="deals.stats.chartsLabel">Trend Analysis</div>
+          </div>
+          <div class="deal-stat">
+            <div class="ds-icon">🎯</div>
+            <div class="ds-value" data-i18n="deals.stats.rates">Rates</div>
+            <div class="ds-label" data-i18n="deals.stats.ratesLabel">Conversion Tracking</div>
+          </div>
+        </div>
+
+        <div class="deal-features" id="deal-features-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ ACCOUNTING -->
+<section class="accounting-section" id="accounting">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-i18n="accounting.label">💰 Accounting</span>
+      <h2 class="section-title">
+        <span data-i18n="accounting.title1">Numbers don't lie.</span><br />
+        <span data-i18n="accounting.title2">Spreadsheets do.</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="accounting.subtitle"></p>
+    </div>
+
+    <div class="accounting-grid">
+      <div class="accounting-visual">
+        <img src="screenshots/accounting.png" alt="Accounting" class="section-screenshot" />
+      </div>
+      <div class="accounting-features">
+        <div class="af-card"><div class="af-icon">📥</div><div><div class="af-title" data-i18n="accounting.cards.revenue.title">Revenue tracking</div><div class="af-desc" data-i18n="accounting.cards.revenue.desc"></div></div></div>
+        <div class="af-card"><div class="af-icon">📤</div><div><div class="af-title" data-i18n="accounting.cards.expenses.title">Expense management</div><div class="af-desc" data-i18n="accounting.cards.expenses.desc"></div></div></div>
+        <div class="af-card"><div class="af-icon">📎</div><div><div class="af-title" data-i18n="accounting.cards.docs.title">Document attachments</div><div class="af-desc" data-i18n="accounting.cards.docs.desc"></div></div></div>
+        <div class="af-card"><div class="af-icon">🔗</div><div><div class="af-title" data-i18n="accounting.cards.linked.title">Linked to deals & contacts</div><div class="af-desc" data-i18n="accounting.cards.linked.desc"></div></div></div>
+        <div class="af-card"><div class="af-icon">📊</div><div><div class="af-title" data-i18n="accounting.cards.balance.title">Net balance at a glance</div><div class="af-desc" data-i18n="accounting.cards.balance.desc"></div></div></div>
+        <div class="af-card"><div class="af-icon">📤</div><div><div class="af-title" data-i18n="accounting.cards.export.title">CSV export</div><div class="af-desc" data-i18n="accounting.cards.export.desc"></div></div></div>
+        <div class="tax-rates-box">
+          <div class="trb-label" data-i18n="accounting.taxLabel">🧾 Supported Tax Rates</div>
+          <div class="trb-rates">
+            <span class="trb-rate">0%</span><span class="trb-rate">5%</span>
+            <span class="trb-rate">7.7%</span><span class="trb-rate">10%</span>
+            <span class="trb-rate">19%</span><span class="trb-rate">20%</span>
+            <span class="trb-rate">21%</span><span class="trb-rate">23%</span>
+          </div>
+          <div class="trb-note" data-i18n="accounting.taxNote"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ MARKETING -->
+<section class="marketing-section" id="marketing">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-i18n="marketing.label">🚀 Digital Marketing</span>
+      <h2 class="section-title">
+        <span data-i18n="marketing.title1">Reach your leads.</span><br />
+        <span data-i18n="marketing.title2">Professionally. (We promise.)</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="marketing.subtitle"></p>
+    </div>
+
+    <div class="marketing-tabs">
+      <button class="tab-btn active" data-tab="newsletters" data-i18n="marketing.tabs.newsletters">✉️ Newsletters</button>
+      <button class="tab-btn" data-tab="landing"     data-i18n="marketing.tabs.landing">🏠 Landing Pages</button>
+      <button class="tab-btn" data-tab="social"      data-i18n="marketing.tabs.social">📱 Social Media</button>
+      <button class="tab-btn" data-tab="email"       data-i18n="marketing.tabs.email">🎨 Email Builder</button>
+      <button class="tab-btn" data-tab="workflows"   data-i18n="marketing.tabs.workflows">⚙️ Workflows</button>
+    </div>
+
+    <div class="tab-content">
+      <div id="tab-panel" class="tab-panel">
+        <div id="tab-visual" class="tab-visual"></div>
+        <div class="tab-info">
+          <h3 class="tab-title" id="tab-title"></h3>
+          <p  class="tab-desc"  id="tab-desc"></p>
+          <ul class="tab-bullets" id="tab-bullets"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-i18n="pricing.label">💎 Pricing</span>
+      <h2 class="section-title">
+        <span data-i18n="pricing.title1">Simple pricing.</span><br />
+        <span data-i18n="pricing.title2">No gotchas. No drama.</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="pricing.subtitle"></p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Trial -->
+      <div class="plan-card card">
+        <div class="plan-icon">🌱</div>
+        <div class="plan-name"  data-i18n="pricing.plans.trial.name">Free Trial</div>
+        <div class="plan-price">
+          <span class="price-currency">CHF</span>
+          <span class="price-value">0</span>
+          <span class="price-period" data-i18n="pricing.plans.trial.period">/30 days</span>
+        </div>
+        <div class="plan-desc" data-i18n="pricing.plans.trial.desc"></div>
+        <ul class="plan-features">
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.trial30days">30-day free trial</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.allFeatures">All features included</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.contacts100">Up to 100 contacts</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.deals50">Up to 50 deals</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.emails100">100 emails/month</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.emailSupport">Email support</span></li>
+        </ul>
+        <a href="#" class="plan-cta btn-secondary" data-i18n="pricing.plans.trial.cta">Start for free</a>
+      </div>
+
+      <!-- Monthly (featured) -->
+      <div class="plan-card card featured">
+        <div class="plan-badge" data-i18n="pricing.popular">⭐ Most Popular</div>
+        <div class="plan-icon">🚀</div>
+        <div class="plan-name"  data-i18n="pricing.plans.monthly.name">Monthly</div>
+        <div class="plan-price">
+          <span class="price-currency">CHF</span>
+          <span class="price-value">19.99</span>
+          <span class="price-period" data-i18n="pricing.plans.monthly.period">/mo</span>
+        </div>
+        <div class="plan-desc" data-i18n="pricing.plans.monthly.desc"></div>
+        <ul class="plan-features">
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.contactsUnlimited">Unlimited contacts</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.dealsUnlimited">Unlimited deals</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.emails1000">1,000 emails/month</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.workflows">Workflow automation</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.newsletters">Newsletter campaigns</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.landingPages">Landing pages</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.prioritySupport">Priority support</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.advancedAnalytics">Advanced analytics</span></li>
+        </ul>
+        <a href="#" class="plan-cta btn-primary" data-i18n="pricing.plans.monthly.cta">Subscribe</a>
+      </div>
+
+      <!-- Annual -->
+      <div class="plan-card card">
+        <div class="plan-save-badge" data-i18n="pricing.save">Save 17%</div>
+        <div class="plan-icon">💡</div>
+        <div class="plan-name"  data-i18n="pricing.plans.annual.name">Annual</div>
+        <div class="plan-price">
+          <span class="price-currency">CHF</span>
+          <span class="price-value">199.9</span>
+          <span class="price-period" data-i18n="pricing.plans.annual.period">/yr</span>
+        </div>
+        <div class="plan-price-sub" data-i18n="pricing.plans.annual.priceSub">(CHF 16.66/mo)</div>
+        <div class="plan-desc" data-i18n="pricing.plans.annual.desc"></div>
+        <ul class="plan-features">
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.everythingMonthly">Everything in Monthly</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.save17">Save 17% (CHF 39.98/yr)</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.contactsUnlimited">Unlimited contacts</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.dealsUnlimited">Unlimited deals</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.emails1000">1,000 emails/month</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.prioritySupport">Priority support</span></li>
+          <li class="pf-item"><span class="pf-check">✓</span><span data-i18n="pricing.features.advancedAnalytics">Advanced analytics</span></li>
+        </ul>
+        <a href="#" class="plan-cta btn-secondary" data-i18n="pricing.plans.annual.cta">Subscribe</a>
+      </div>
+    </div>
+
+    <p class="pricing-note" data-i18n="pricing.note"></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="cta-emoji">🎯</span>
+      <h2 class="cta-title">
+        <span data-i18n="cta.title1">Ready to stop using</span><br />
+        <span data-i18n="cta.title2">17 different apps?</span>
+      </h2>
+      <p class="cta-desc" data-i18n="cta.desc"></p>
+      <div class="cta-actions">
+        <a href="#pricing"  class="btn-primary cta-btn" data-i18n="cta.startFree">Start for free — no card needed ✨</a>
+        <a href="#features" class="btn-secondary"       data-i18n="cta.seeFeatures">See all features</a>
+      </div>
+      <div class="cta-social-proof">
+        <div class="sp-avatars">
+          <div class="sp-avatar" style="background:#ff6b35">ML</div>
+          <div class="sp-avatar" style="background:#10b981">SA</div>
+          <div class="sp-avatar" style="background:#3b82f6">JK</div>
+          <div class="sp-avatar" style="background:#8b5cf6">PN</div>
+          <div class="sp-avatar" style="background:#f59e0b">CR</div>
+        </div>
+        <div class="sp-text">
+          <strong data-i18n="cta.spBold">Loved by founders and teams</strong>
+          <span data-i18n="cta.spText"> who've got better things to do than fight with their CRM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logo.svg" alt="Afera" width="32" height="32" />
+          <span class="footer-logo-text">Afera</span>
+        </div>
+        <p class="footer-tagline" data-i18n="footer.tagline">The CRM that doesn't make you want to cry.</p>
+        <div class="footer-langs">
+          <button class="footer-lang-btn" data-lang="en">🇬🇧 EN</button>
+          <button class="footer-lang-btn" data-lang="fr">🇫🇷 FR</button>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="flg-title" data-i18n="footer.groups.product">Product</div>
+        <ul>
+          <li><a href="#features"   data-i18n="footer.links.dashboard">Dashboard</a></li>
+          <li><a href="#contacts"   data-i18n="footer.links.contacts">Contacts</a></li>
+          <li><a href="#deals"      data-i18n="footer.links.deals">Deals</a></li>
+          <li><a href="#accounting" data-i18n="footer.links.accounting">Accounting</a></li>
+          <li><a href="#marketing"  data-i18n="footer.links.digitalMarketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="flg-title" data-i18n="footer.groups.company">Company</div>
+        <ul>
+          <li><a href="#" data-i18n="footer.links.about">About</a></li>
+          <li><a href="#" data-i18n="footer.links.blog">Blog</a></li>
+          <li><a href="#" data-i18n="footer.links.changelog">Changelog</a></li>
+          <li><a href="#" data-i18n="footer.links.careers">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="flg-title" data-i18n="footer.groups.support">Support</div>
+        <ul>
+          <li><a href="#"        data-i18n="footer.links.helpCenter">Help Center</a></li>
+          <li><a href="#"        data-i18n="footer.links.contactUs">Contact Us</a></li>
+          <li><a href="#"        data-i18n="footer.links.status">Status</a></li>
+          <li><a href="#pricing" data-i18n="footer.links.pricing">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy" data-i18n="footer.copyright"></div>
+      <div class="footer-legal">
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        <a href="#" data-i18n="footer.cookies">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // Extend applyTranslations to also rebuild the deal features list
+  const _base = applyTranslations;
+  applyTranslations = function() {
+    _base();
+    const list = document.getElementById('deal-features-list');
+    if (list) {
+      list.innerHTML = translations[currentLocale].deals.features
+        .map(f => `<div class="df-item"><span class="df-bullet">→</span>${f}</div>`)
+        .join('');
+    }
+  };
+  applyTranslations();
+</script>
+
+</body>
 </html>
