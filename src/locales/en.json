@@ -1,0 +1,290 @@
+{
+  "nav": {
+    "features": "Features",
+    "contacts": "Contacts",
+    "deals": "Deals",
+    "marketing": "Marketing",
+    "pricing": "Pricing",
+    "login": "Log in",
+    "tryfree": "Try for free ✨",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Now with Digital Marketing built in",
+    "title1": "Your contacts called.",
+    "title2": "They want a",
+    "titleHighlight": "better CRM",
+    "title3": ".",
+    "subtitle": "Afera brings contacts, deals, accounting, and marketing into one place — so you can stop juggling a dozen apps and actually close deals.",
+    "subtitleSmall": "No PhD in spreadsheets required.",
+    "startFree": "Start for free ✨",
+    "watchDemo": "Watch demo ▶",
+    "stat1Value": "∞",
+    "stat1Label": "Contacts",
+    "stat2Value": "5",
+    "stat2Label": "Tools in one",
+    "stat3Value": "0",
+    "stat3Label": "Excel files needed",
+    "stat4Value": "😌",
+    "stat4Label": "Stress level",
+    "screenshotAlt": "Afera Dashboard"
+  },
+  "features": {
+    "label": "Everything in one place",
+    "title": "Stop switching tabs.\nStart closing deals.",
+    "subtitle": "Afera packs a full sales stack into a single, surprisingly pleasant app. Like Marie Kondo, but for your business tools.",
+    "learnMore": "Learn more",
+    "dashboard": {
+      "title": "Dashboard",
+      "desc": "Revenue, contacts, open deals, net balance — all at a glance. Start every morning knowing exactly how you're doing."
+    },
+    "contacts": {
+      "title": "Contacts",
+      "desc": "Your entire network, organized. Track readiness, assign deals, and know when to follow up before they ghost you."
+    },
+    "deals": {
+      "title": "Deals",
+      "desc": "Pipeline management with a Kanban board and charts. Watch deals move from \"maybe\" to \"money\". Celebrate accordingly."
+    },
+    "accounting": {
+      "title": "Accounting",
+      "desc": "Revenue, expenses, taxes, documents — tracked cleanly in CHF (or your currency). No more shoebox of receipts."
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "desc": "Email campaigns, landing pages, social posts, and automation workflows. Reach your leads professionally (not spammily)."
+    }
+  },
+  "contacts": {
+    "label": "👥 Contacts",
+    "title1": "Your Rolodex,",
+    "title2": "but from this decade.",
+    "subtitle": "Stop losing track of who's who. Afera keeps your entire network organized, searchable, and — most importantly — not in a pile on your desk.",
+    "readinessLabel": "Sales Readiness Tracker",
+    "readinessHint": "Know exactly who to call today",
+    "badges": {
+      "cold": "🥶 Cold",
+      "exploring": "🔍 Exploring",
+      "interested": "👀 Interested",
+      "evaluating": "⚖️ Evaluating",
+      "ready": "✅ Ready",
+      "buyer": "💰 Buyer"
+    },
+    "features": {
+      "readiness": {
+        "title": "Sales readiness levels",
+        "desc": "Cold → Exploring → Interested → Evaluating → Ready → Buyer. Because \"maybe someday\" is not a pipeline stage."
+      },
+      "activity": {
+        "title": "Activity tracking",
+        "desc": "Log calls, emails, meetings. Know the last time you actually talked to someone."
+      },
+      "deals": {
+        "title": "Deal association",
+        "desc": "Link contacts to deals automatically. See the full picture in one click."
+      },
+      "export": {
+        "title": "Bulk operations & CSV export",
+        "desc": "Clean up your list, export to spreadsheet, send to your accountant. Done."
+      }
+    },
+    "floatSearch": "Smart Search",
+    "floatSearchSub": "Find anyone in seconds",
+    "floatExport": "CSV Export",
+    "floatExportSub": "Your data, your way"
+  },
+  "deals": {
+    "label": "🤝 Deals",
+    "title1": "Pipeline dreams.",
+    "title2": "Actual revenue.",
+    "subtitle": "Visualize every deal from first contact to signed contract. Kanban board, charts, conversion rates — everything you need to close more and guess less.",
+    "kanban": {
+      "pending": "⏳ Pending",
+      "signed": "✅ Signed",
+      "lost": "❌ Lost"
+    },
+    "stats": {
+      "kanban": "Kanban",
+      "kanbanLabel": "Visual Board",
+      "charts": "Charts",
+      "chartsLabel": "Trend Analysis",
+      "rates": "Rates",
+      "ratesLabel": "Conversion Tracking"
+    },
+    "features": [
+      "Drag-and-drop Kanban board (Pending → Signed → Lost)",
+      "Monthly deal stats and trend charts",
+      "Year / month filtering",
+      "Deal value in CHF (or your currency)",
+      "Bulk deal operations",
+      "Link deals to contacts automatically"
+    ],
+    "videoLabel": "Deals Pipeline Demo",
+    "videoSub": "Replace with product walkthrough video · recommended 1280×720"
+  },
+  "accounting": {
+    "label": "💰 Accounting",
+    "title1": "Numbers don't lie.",
+    "title2": "Spreadsheets do.",
+    "subtitle": "Track every franc in, every expense out. Attach receipts, apply the right tax rate, and hand your accountant something they'll actually smile at.",
+    "cards": {
+      "revenue": { "title": "Revenue tracking", "desc": "Services, products, consulting, licensing, subscriptions — all categorized and summed up beautifully." },
+      "expenses": { "title": "Expense management", "desc": "Salaries, software, marketing, travel... yes, even that 'team lunch' counts." },
+      "docs": { "title": "Document attachments", "desc": "Attach PDFs, invoices, receipts directly to entries. No more lost paperwork." },
+      "linked": { "title": "Linked to deals & contacts", "desc": "Every revenue entry can trace back to a deal or contact. Accountability, built in." },
+      "balance": { "title": "Net balance at a glance", "desc": "Revenue minus expenses, by month or year. The number that matters, front and center." },
+      "export": { "title": "CSV export", "desc": "Export everything for your accountant in one click. They'll send you holiday cards." }
+    },
+    "taxLabel": "🧾 Supported Tax Rates",
+    "taxNote": "Because every country does taxes differently. Ours is just more fun."
+  },
+  "marketing": {
+    "label": "🚀 Digital Marketing",
+    "title1": "Reach your leads.",
+    "title2": "Professionally. (We promise.)",
+    "subtitle": "Email campaigns, landing pages, social posts, and automation workflows — all inside Afera. Your marketing agency will be impressed. Or jealous.",
+    "tabs": {
+      "newsletters": "✉️ Newsletters",
+      "landing": "🏠 Landing Pages",
+      "social": "📱 Social Media",
+      "email": "🎨 Email Builder",
+      "workflows": "⚙️ Workflows"
+    },
+    "details": {
+      "newsletters": {
+        "title": "Email Campaigns that actually get opened",
+        "desc": "Send targeted newsletters to your contacts. Track opens, manage campaigns, and stop wondering if anyone is reading your emails. (Spoiler: they are.)",
+        "bullets": [
+          "Create and manage newsletter campaigns",
+          "Target specific contact segments",
+          "Professional templates ready to go",
+          "Track campaign performance"
+        ]
+      },
+      "landing": {
+        "title": "Landing Pages that convert visitors into leads",
+        "desc": "Build drag-and-drop landing pages without touching a single line of code. Your designer friend will still be impressed (don't tell them how easy it was).",
+        "bullets": [
+          "Drag-and-drop page builder",
+          "Full-screen editor experience",
+          "Multiple pages, all in one place",
+          "Share with a single link"
+        ]
+      },
+      "social": {
+        "title": "Social Media posts, written and scheduled",
+        "desc": "Plan your social content across platforms. Write posts, schedule them, and actually maintain a consistent online presence for once.",
+        "bullets": [
+          "Multi-platform post management",
+          "Full-screen post editor",
+          "Content calendar view",
+          "No more posting at 2am"
+        ]
+      },
+      "email": {
+        "title": "Drag-and-drop Email Builder",
+        "desc": "Create beautiful email templates without crying. Headers, heroes, buttons, columns, product blocks — drag them in, style them up, send them out.",
+        "bullets": [
+          "12+ block types (Header, Hero, Text, Image, Button…)",
+          "Premade templates: Newsletter, Promotion, Welcome",
+          "Dynamic content: {{first_name}}, {{company}}…",
+          "Preview before you send. Obviously."
+        ]
+      },
+      "workflows": {
+        "title": "Automation that works while you sleep",
+        "desc": "Set up email sequences and qualification workflows that run automatically. It's like having a salesperson who never takes breaks (or coffee).",
+        "bullets": [
+          "Email automation workflows",
+          "Lead qualification sequences",
+          "Trigger-based actions",
+          "Visual workflow builder"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "label": "💎 Pricing",
+    "title1": "Simple pricing.",
+    "title2": "No gotchas. No drama.",
+    "subtitle": "Try everything free for 30 days. No credit card required. Upgrade when you're ready — or don't, we're not your boss.",
+    "popular": "⭐ Most Popular",
+    "save": "Save 17%",
+    "note": "🔒 No credit card required to start · ✅ Cancel anytime · 🇨🇭 Prices in CHF",
+    "plans": {
+      "trial": {
+        "name": "Free Trial",
+        "period": "/30 days",
+        "desc": "Full access for 30 days. No credit card. No strings attached.",
+        "cta": "Start for free"
+      },
+      "monthly": {
+        "name": "Monthly",
+        "period": "/mo",
+        "desc": "Everything, unlimited. Pay month to month, cancel whenever.",
+        "cta": "Subscribe"
+      },
+      "annual": {
+        "name": "Annual",
+        "period": "/yr",
+        "priceSub": "(CHF 16.66/mo)",
+        "desc": "Same as Monthly, but smarter. Save CHF 39.98 per year.",
+        "cta": "Subscribe"
+      }
+    },
+    "features": {
+      "trial30days": "30-day free trial",
+      "allFeatures": "All features included",
+      "contacts100": "Up to 100 contacts",
+      "deals50": "Up to 50 deals",
+      "emails100": "100 emails/month",
+      "emailSupport": "Email support",
+      "contactsUnlimited": "Unlimited contacts",
+      "dealsUnlimited": "Unlimited deals",
+      "emails1000": "1,000 emails/month",
+      "workflows": "Workflow automation",
+      "newsletters": "Newsletter campaigns",
+      "landingPages": "Landing pages",
+      "prioritySupport": "Priority support",
+      "advancedAnalytics": "Advanced analytics",
+      "everythingMonthly": "Everything in Monthly",
+      "save17": "Save 17% (CHF 39.98/yr)"
+    }
+  },
+  "cta": {
+    "title1": "Ready to stop using",
+    "title2": "17 different apps?",
+    "desc": "Join the businesses that stopped juggling spreadsheets and started actually selling. Your future self will thank you. So will your accountant.",
+    "startFree": "Start for free — no card needed ✨",
+    "seeFeatures": "See all features",
+    "spBold": "Loved by founders and teams",
+    "spText": "who've got better things to do than fight with their CRM"
+  },
+  "footer": {
+    "tagline": "The CRM that doesn't make you want to cry.",
+    "groups": {
+      "product": "Product",
+      "company": "Company",
+      "support": "Support"
+    },
+    "links": {
+      "dashboard": "Dashboard",
+      "contacts": "Contacts",
+      "deals": "Deals",
+      "accounting": "Accounting",
+      "digitalMarketing": "Digital Marketing",
+      "about": "About",
+      "blog": "Blog",
+      "changelog": "Changelog",
+      "careers": "Careers",
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us",
+      "status": "Status",
+      "pricing": "Pricing"
+    },
+    "copyright": "© {year} Afera. Made with ☕ and possibly too much determination.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  }
+}
