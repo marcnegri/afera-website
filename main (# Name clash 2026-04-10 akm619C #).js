@@ -3,13 +3,13 @@ const translations = {
   en: {
     nav: {
       features: "Features", contacts: "Contacts", deals: "Deals",
-      marketing: "Marketing", pedro: "Pedro AI", pricing: "Pricing",
+      marketing: "Marketing", pricing: "Pricing",
       login: "Log in", tryfree: "Try for free ✨", menu: "Menu"
     },
     hero: {
       badge: "Now with Digital Marketing built in",
       title1: "Your contacts called.",
-      title2: "They want a", title3: ".", titleHighlight: "better CRM",
+      title2: "They want a", title3: ".",
       subtitle: "Afera brings contacts, deals, accounting, and marketing into one place — so you can stop juggling a dozen apps and actually close deals.",
       subtitleSmall: "No PhD in spreadsheets required.",
       startFree: "Start for free ✨", watchDemo: "Watch demo ▶",
@@ -28,12 +28,12 @@ const translations = {
       contacts:  { title: "Contacts",  desc: "Your entire network, organized. Track readiness, assign deals, and know when to follow up before they ghost you." },
       deals:     { title: "Deals",     desc: "Pipeline management with a Kanban board and charts. Watch deals move from \"maybe\" to \"money\". Celebrate accordingly." },
       accounting:{ title: "Accounting",desc: "Revenue, expenses, taxes, documents — tracked cleanly in CHF (or your currency). No more shoebox of receipts." },
-      marketing: { title: "Digital Marketing", desc: "Email campaigns, landing pages, and automation workflows — all in one place. No extra tools needed." },
+      marketing: { title: "Digital Marketing", desc: "Email campaigns, landing pages, social posts, and automation workflows. Reach your leads professionally (not spammily)." },
       pedro: { title: "Pedro AI", desc: "Your AI co-pilot built right into Afera. Ask Pedro anything — from follow-up priorities to drafting emails — without ever leaving the app." }
     },
     contacts: {
       label: "👥 Contacts",
-      title1: "Your notebook,", title2: "but from this decade.",
+      title1: "Your Rolodex,", title2: "but from this decade.",
       subtitle: "Stop losing track of who's who. Afera keeps your entire network organized, searchable, and — most importantly — not in a pile on your desk.",
       readinessLabel: "Sales Readiness Tracker", readinessHint: "Know exactly who to call today",
       badges: { cold: "🥶 Cold", exploring: "🔍 Exploring", interested: "👀 Interested", evaluating: "⚖️ Evaluating", ready: "✅ Ready", buyer: "💰 Buyer" },
@@ -76,9 +76,9 @@ const translations = {
     },
     marketing: {
       label: "🚀 Digital Marketing",
-      title1: "Email, automation,", title2: "all in one place.",
-      subtitle: "Newsletters, landing pages, email templates, and automation workflows — built right into Afera. Everything you need to convert leads, without switching tools.",
-      tabs: { newsletters: "✉️ Newsletters", landing: "🏠 Landing Pages", email: "🎨 Email Builder", workflows: "⚙️ Workflows" },
+      title1: "Reach your leads.", title2: "Professionally. (We promise.)",
+      subtitle: "Email campaigns, landing pages, social posts, and automation workflows — all inside Afera. Your marketing agency will be impressed. Or jealous.",
+      tabs: { newsletters: "✉️ Newsletters", landing: "🏠 Landing Pages", social: "📱 Social Media", email: "🎨 Email Builder", workflows: "⚙️ Workflows" },
       details: {
         newsletters: {
           title: "Email Campaigns that actually get opened",
@@ -89,6 +89,11 @@ const translations = {
           title: "Landing Pages that convert visitors into leads",
           desc: "Build drag-and-drop landing pages without touching a single line of code. Your designer friend will still be impressed (don't tell them how easy it was).",
           bullets: ["Drag-and-drop page builder", "Full-screen editor experience", "Multiple pages, all in one place", "Share with a single link"]
+        },
+        social: {
+          title: "Social Media posts, written and scheduled",
+          desc: "Plan your social content across platforms. Write posts, schedule them, and actually maintain a consistent online presence for once.",
+          bullets: ["Multi-platform post management", "Full-screen post editor", "Content calendar view", "No more posting at 2am"]
         },
         email: {
           title: "Drag-and-drop Email Builder",
@@ -117,7 +122,7 @@ const translations = {
         status: "AI Assistant · Always online",
         msg1: "Hi! I'm Pedro 👋 Ask me anything about your pipeline, contacts, or next steps.",
         msg2: "Which leads should I follow up with today?",
-        msg3: "Based on your pipeline I'd prioritize: TechStart AG (deal stale 5 days), Maison Lacroix (opened your last email), and Studio Bleu (marked Ready). Want me to draft follow-up emails?",
+        msg3: "Based on your pipeline, I'd prioritize: TechStart AG (deal stale 5 days), Maison Lacroix (opened your last email), and Studio Bleu (marked Ready). Want me to draft follow-up emails?",
         msg4: "Yes, draft one for TechStart AG.",
         placeholder: "Ask Pedro anything..."
       }
@@ -154,7 +159,7 @@ const translations = {
       groups: { product: "Product", company: "Company", support: "Support" },
       links: {
         dashboard: "Dashboard", contacts: "Contacts", deals: "Deals",
-        accounting: "Accounting", digitalMarketing: "Digital Marketing", pedro: "Pedro AI",
+        accounting: "Accounting", digitalMarketing: "Digital Marketing",
         about: "About", blog: "Blog", changelog: "Changelog", careers: "Careers",
         helpCenter: "Help Center", contactUs: "Contact Us", status: "Status", pricing: "Pricing"
       },
@@ -166,13 +171,13 @@ const translations = {
   fr: {
     nav: {
       features: "Fonctionnalités", contacts: "Contacts", deals: "Affaires",
-      marketing: "Marketing", pedro: "Pedro IA", pricing: "Tarifs",
+      marketing: "Marketing", pricing: "Tarifs",
       login: "Connexion", tryfree: "Essai gratuit ✨", menu: "Menu"
     },
     hero: {
       badge: "Maintenant avec le Marketing Digital intégré",
       title1: "Vos contacts ont appelé.",
-      title2: "Ils veulent un", title3: ".", titleHighlight: "meilleur CRM",
+      title2: "Ils veulent un", title3: ".",
       subtitle: "Afera regroupe contacts, affaires, comptabilité et marketing dans un seul endroit — pour que vous puissiez arrêter de jongler entre mille applis et enfin conclure des deals.",
       subtitleSmall: "Aucun doctorat en tableurs requis.",
       startFree: "Commencer gratuitement ✨", watchDemo: "Voir la démo ▶",
@@ -191,12 +196,12 @@ const translations = {
       contacts:  { title: "Contacts",         desc: "Tout votre réseau, organisé. Suivez la maturité, assignez des affaires, et sachez quand relancer avant qu'ils vous oublient." },
       deals:     { title: "Affaires",          desc: "Gestion du pipeline avec un tableau Kanban et des graphiques. Regardez les affaires passer de « peut-être » à « signé »." },
       accounting:{ title: "Comptabilité",      desc: "Revenus, dépenses, taxes, documents — tout tracé proprement en CHF (ou votre devise). Fini la boîte à chaussures de reçus." },
-      marketing: { title: "Marketing Digital", desc: "Campagnes email, pages d'atterrissage et automatisations — tout dans Afera. Aucun outil supplémentaire nécessaire." },
+      marketing: { title: "Marketing Digital", desc: "Campagnes email, pages d'atterrissage, posts sociaux et automatisations. Touchez vos leads de façon professionnelle (pas comme un spammeur)." },
       pedro: { title: "Pedro IA", desc: "Votre co-pilote IA intégré dans Afera. Demandez à Pedro n'importe quoi — priorités de relance, rédaction d'emails — sans quitter l'appli." }
     },
     contacts: {
       label: "👥 Contacts",
-      title1: "Votre annuaire,", title2: "mais de ce siècle.",
+      title1: "Votre Rolodex,", title2: "mais de ce siècle.",
       subtitle: "Arrêtez de perdre le fil de qui est qui. Afera garde votre réseau organisé, consultable, et — surtout — pas en pile sur votre bureau.",
       readinessLabel: "Suivi de maturité commerciale", readinessHint: "Sachez exactement qui appeler aujourd'hui",
       badges: { cold: "🥶 Froid", exploring: "🔍 En exploration", interested: "👀 Intéressé", evaluating: "⚖️ En évaluation", ready: "✅ Prêt", buyer: "💰 Acheteur" },
@@ -239,9 +244,9 @@ const translations = {
     },
     marketing: {
       label: "🚀 Marketing Digital",
-      title1: "Email, automatisation,", title2: "tout au même endroit.",
-      subtitle: "Newsletters, pages d'atterrissage, modèles d'emails et automatisations — intégrés dans Afera. Tout ce qu'il faut pour convertir vos leads, sans changer d'outil.",
-      tabs: { newsletters: "✉️ Newsletters", landing: "🏠 Pages d'atterrissage", email: "🎨 Éditeur d'emails", workflows: "⚙️ Automatisations" },
+      title1: "Touchez vos leads.", title2: "Professionnellement. (Promis.)",
+      subtitle: "Campagnes email, pages d'atterrissage, posts sociaux et automatisations — tout dans Afera. Votre agence marketing sera impressionnée. Ou jalouse.",
+      tabs: { newsletters: "✉️ Newsletters", landing: "🏠 Pages d'atterrissage", social: "📱 Réseaux sociaux", email: "🎨 Éditeur d'emails", workflows: "⚙️ Automatisations" },
       details: {
         newsletters: {
           title: "Des campagnes email qui s'ouvrent vraiment",
@@ -252,6 +257,11 @@ const translations = {
           title: "Des pages d'atterrissage qui convertissent",
           desc: "Créez des pages drag-and-drop sans toucher une seule ligne de code. Votre ami designer sera quand même impressionné (ne lui dites pas que c'était facile).",
           bullets: ["Constructeur de pages drag-and-drop", "Éditeur plein écran", "Plusieurs pages, au même endroit", "Partager avec un simple lien"]
+        },
+        social: {
+          title: "Posts réseaux sociaux, rédigés et planifiés",
+          desc: "Planifiez votre contenu sur plusieurs plateformes. Rédigez, programmez, et maintenez enfin une présence en ligne cohérente.",
+          bullets: ["Gestion multi-plateforme", "Éditeur de posts plein écran", "Vue calendrier de contenu", "Fini les posts à 2h du matin"]
         },
         email: {
           title: "Éditeur d'emails drag-and-drop",
@@ -280,7 +290,7 @@ const translations = {
         status: "Assistant IA · Toujours en ligne",
         msg1: "Bonjour ! Je suis Pedro 👋 Posez-moi n'importe quelle question sur votre pipeline, vos contacts ou vos prochaines étapes.",
         msg2: "Quels leads devrais-je relancer aujourd'hui ?",
-        msg3: "D'après votre pipeline je prioriserais : TechStart AG (affaire en attente 5 jours), Maison Lacroix (a ouvert votre dernier email) et Studio Bleu (marqué Prêt). Voulez-vous que je rédige des emails de relance ?",
+        msg3: "D'après votre pipeline, je prioriserais : TechStart AG (affaire en attente depuis 5 jours), Maison Lacroix (a ouvert votre dernier email) et Studio Bleu (marqué Prêt). Voulez-vous que je rédige des emails de relance ?",
         msg4: "Oui, rédige-en un pour TechStart AG.",
         placeholder: "Demandez à Pedro n'importe quoi..."
       }
@@ -317,7 +327,7 @@ const translations = {
       groups: { product: "Produit", company: "Entreprise", support: "Support" },
       links: {
         dashboard: "Tableau de bord", contacts: "Contacts", deals: "Affaires",
-        accounting: "Comptabilité", digitalMarketing: "Marketing Digital", pedro: "Pedro IA",
+        accounting: "Comptabilité", digitalMarketing: "Marketing Digital",
         about: "À propos", blog: "Blog", changelog: "Nouveautés", careers: "Carrières",
         helpCenter: "Centre d'aide", contactUs: "Nous contacter", status: "Statut", pricing: "Tarifs"
       },
@@ -429,6 +439,36 @@ const tabMockUIs = {
         </div>
         <div class="mpb-block" style="text-align:center">
           <div style="display:inline-block;background:#ff6b35;color:white;padding:7px 22px;border-radius:7px;font-size:12px;font-weight:700;font-family:'Fredoka',sans-serif">Get Started →</div>
+        </div>
+      </div>
+    </div>`,
+
+  social: () => `
+    <div class="tab-mock">
+      <div class="mock-topbar">
+        <span class="mock-topbar-title">📱 Social Media</span>
+        <span class="mock-btn-mini">+ New Post</span>
+      </div>
+      <div class="mock-posts-grid">
+        <div class="mpg-post">
+          <div class="mpg-platform">LinkedIn</div>
+          <div class="mpg-preview">🚀 Excited to share our Q1 results — our team grew by 40% this quarter...</div>
+          <div class="mpg-footer"><span class="mpg-date">Apr 12</span><span class="mpg-status sched">Scheduled</span></div>
+        </div>
+        <div class="mpg-post">
+          <div class="mpg-platform">Instagram</div>
+          <div class="mpg-preview">Behind the scenes at our office! 📸 #startup #crm #growth</div>
+          <div class="mpg-footer"><span class="mpg-date">—</span><span class="mpg-status draftx">Draft</span></div>
+        </div>
+        <div class="mpg-post">
+          <div class="mpg-platform">Twitter / X</div>
+          <div class="mpg-preview">Managing your pipeline shouldn't require a PhD. Enter Afera. ✨</div>
+          <div class="mpg-footer"><span class="mpg-date">Apr 8</span><span class="mpg-status pub">Published</span></div>
+        </div>
+        <div class="mpg-post">
+          <div class="mpg-platform">LinkedIn</div>
+          <div class="mpg-preview">5 signs you need a better CRM. (Hint: spreadsheets are not it.)</div>
+          <div class="mpg-footer"><span class="mpg-date">Apr 15</span><span class="mpg-status sched">Scheduled</span></div>
         </div>
       </div>
     </div>`,
@@ -664,5 +704,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters()
   initTiltEffect()
   initVideoModal()
-  startTypewriter()
 })

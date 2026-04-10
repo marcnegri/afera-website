@@ -161,8 +161,7 @@ ul { list-style: none; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
 .hero-title { font-size: clamp(36px, 6vw, 72px); font-weight: 700; line-height: 1.1; margin-bottom: 24px; letter-spacing: -0.5px; }
-.highlight { color: var(--orange); position: relative; }
-.highlight::after { content: ''; position: absolute; bottom: 4px; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--orange), var(--orange-light)); border-radius: 2px; opacity: 0.3; }
+.highlight { position: relative; }
 
 .hero-subtitle { font-size: 18px; color: var(--gray-500); max-width: 580px; margin: 0 auto 36px; line-height: 1.8; }
 .hero-subtitle-small { font-size: 15px; color: var(--gray-300); }
@@ -653,9 +652,6 @@ ul { list-style: none; }
 
 /* Pedro feature card highlight */
 .pedro-feature-card { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%); }
-
-/* Pedro CTA button inside dark section */
-.pedro-cta-btn { margin-top: 28px; align-self: flex-start; }
 
 /* Pedro chat mock UI */
 .pedro-chat-mock {
