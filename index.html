@@ -602,20 +602,6 @@
 </div>
 
 <script src="main.js"></script>
-<script>
-  // Extend applyTranslations to also rebuild the deal features list
-  const _base = applyTranslations;
-  applyTranslations = function() {
-    _base();
-    const list = document.getElementById('deal-features-list');
-    if (list) {
-      list.innerHTML = translations[currentLocale].deals.features
-        .map(f => `<div class="df-item"><span class="df-bullet">→</span>${f}</div>`)
-        .join('');
-    }
-  };
-  applyTranslations();
-</script>
 
 </body>
 </html>

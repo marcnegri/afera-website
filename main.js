@@ -362,6 +362,12 @@ function applyTranslations() {
   renderActiveTab()
   const ftitle = document.getElementById('features-title')
   if (ftitle) ftitle.innerHTML = t('features.title').replace('\n', '<br>')
+  const list = document.getElementById('deal-features-list')
+  if (list) {
+    list.innerHTML = translations[currentLocale].deals.features
+      .map(f => `<div class="df-item"><span class="df-bullet">→</span>${f}</div>`)
+      .join('')
+  }
 }
 
 function setLocale(lang) {
