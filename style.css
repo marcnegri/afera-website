@@ -180,14 +180,15 @@ ul { list-style: none; }
 .stat-label { font-size: 13px; color: var(--gray-500); margin-top: 4px; white-space: nowrap; }
 .stat-divider { width: 1px; height: 40px; background: var(--gray-100); }
 
-.hero-screenshot { border-radius: var(--radius-lg); box-shadow: var(--shadow-lg), 0 0 0 1px rgba(0,0,0,0.05); position: relative; background: white; overflow: hidden; }
-.dashboard-img { display: block; width: 100%; height: auto; }
-.screenshot-mock-bar { position: relative; height: 36px; background: white; border-bottom: 1px solid var(--gray-100); display: flex; align-items: center; padding: 0 16px; gap: 8px; }
-.mock-dot { width: 10px; height: 10px; border-radius: 50%; }
-.mock-dot.red    { background: #ff5f57; }
-.mock-dot.yellow { background: #ffbd2e; }
-.mock-dot.green  { background: #28ca42; }
-.mock-url { flex: 1; height: 20px; background: var(--gray-100); border-radius: 6px; max-width: 300px; margin: 0 auto; }
+/* ─── Demo video player ──────────────────────────────────────────────────── */
+.demo-wrap { width: 100%; max-width: 800px; margin: 56px auto 0; padding: 0 24px; }
+.demo-player { position: relative; width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 32px 80px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.07); cursor: pointer; }
+.demo-player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.demo-overlay { position: absolute; inset: 0; }
+.demo-thumb { width: 100%; height: 100%; object-fit: cover; display: block; transition: filter 0.25s ease; }
+.demo-player:hover .demo-thumb { filter: brightness(0.75); }
+.demo-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: none; border: none; cursor: pointer; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.4)); transition: transform 0.2s ease, filter 0.2s ease; pointer-events: none; }
+.demo-player:hover .demo-play { transform: translate(-50%, -50%) scale(1.12); filter: drop-shadow(0 6px 28px rgba(0,0,0,0.55)); }
 
 /* ─── Features Overview ──────────────────────────────────────────────────── */
 .features-overview { padding: 100px 0; background: var(--gray-100); }
@@ -422,11 +423,9 @@ ul { list-style: none; }
 .floating-card.fc-1 { animation: floatY 3.5s ease-in-out infinite; }
 .floating-card.fc-2 { animation: floatY 3.5s ease-in-out 1.75s infinite; }
 
-/* ─── Hero screenshot 3D tilt ────────────────────────────────────────────── */
-.hero-screenshot {
-  transition: transform 0.12s ease;
-  will-change: transform;
-  transform-style: preserve-3d;
+/* ─── Demo wrap responsive ───────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .demo-wrap { padding: 0 12px; margin-top: 40px; }
 }
 
 /* ─── Hero highlight shimmer ─────────────────────────────────────────────── */

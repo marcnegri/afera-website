@@ -38,3 +38,6 @@ coverage
 
 # Misc
 *.pem
+
+# Proton Drive sync conflicts
+*\(# Name clash*\)*

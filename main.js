@@ -593,41 +593,19 @@ function initTiltEffect() {
   })
 }
 
-// ─── Video modal ──────────────────────────────────────────────────────────────
-// Replace 'YOUR_VIDEO_ID' with your YouTube video ID (e.g. 'dQw4w9WgXcQ')
-const YOUTUBE_VIDEO_ID = 'YOUR_VIDEO_ID'
+// ─── In-page video embed ──────────────────────────────────────────────────────
+const YOUTUBE_VIDEO_ID = 'qGZeGePAHg0'
 
-function initVideoModal() {
-  const modal = document.getElementById('video-modal')
-  if (!modal) return
-  const frame = document.getElementById('demo-video-frame')
-  const placeholder = document.getElementById('modal-yt-placeholder')
-  const hasRealVideo = YOUTUBE_VIDEO_ID && YOUTUBE_VIDEO_ID !== 'YOUR_VIDEO_ID'
-
-  if (placeholder) placeholder.style.display = hasRealVideo ? 'none' : 'flex'
-  if (frame) frame.style.display = hasRealVideo ? 'block' : 'none'
-
-  function openModal() {
-    modal.classList.add('open')
-    document.body.style.overflow = 'hidden'
-    if (frame && hasRealVideo) {
-      frame.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`
-    }
-  }
-  function closeModal() {
-    modal.classList.remove('open')
-    document.body.style.overflow = ''
-    if (frame) frame.src = ''
-  }
-
-  document.getElementById('watch-demo-btn')?.addEventListener('click', openModal)
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal || e.target.classList.contains('modal-close')) closeModal()
+function initVideoEmbed() {
+  const overlay = document.getElementById('hero-video-overlay')
+  const iframe  = document.getElementById('hero-demo-iframe')
+  if (!overlay || !iframe) return
+  overlay.addEventListener('click', () => {
+    iframe.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`
+    overlay.style.display = 'none'
   })
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal()
+  document.getElementById('watch-demo-btn')?.addEventListener('click', () => {
+    document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })
   })
 }
 
@@ -669,6 +647,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations()
   initCounters()
   initTiltEffect()
-  initVideoModal()
+  initVideoEmbed()
   startTypewriter()
 })

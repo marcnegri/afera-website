@@ -11,6 +11,7 @@
   gtag('config', 'AW-18103720120');
 </script>
   <meta charset="UTF-8" />
+  <meta name="referrer" content="origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Afera — The CRM that doesn't make you want to cry</title>
   <meta name="description" content="Afera brings contacts, deals, accounting, and marketing into one place." />
@@ -91,16 +92,24 @@
       </div>
     </div>
 
-    <div class="hero-screenshot" id="demo">
-      <div class="screenshot-mock-bar">
-        <div class="mock-dot red"></div>
-        <div class="mock-dot yellow"></div>
-        <div class="mock-dot green"></div>
-        <div class="mock-url"></div>
+    <div class="demo-wrap" id="demo">
+      <div class="demo-player">
+        <iframe id="hero-demo-iframe"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen="allowfullscreen"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="demo-overlay" id="hero-video-overlay">
+          <img src="https://img.youtube.com/vi/qGZeGePAHg0/maxresdefault.jpg" alt="Afera Demo" class="demo-thumb" onerror="this.src='https://img.youtube.com/vi/qGZeGePAHg0/hqdefault.jpg'" />
+          <button class="demo-play" aria-label="Play demo video">
+            <svg viewBox="0 0 68 48" width="72" height="51">
+              <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/>
+              <path d="M45 24 27 14v20" fill="white"/>
+            </svg>
+          </button>
+        </div>
       </div>
-      <img src="screenshots/dashboard.png" data-i18n-attr="alt:hero.screenshotAlt" alt="Afera Dashboard" class="dashboard-img" />
     </div>
-  </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════ FEATURES OVERVIEW -->
@@ -583,32 +592,6 @@
 </footer>
 
 <!-- ═══════════════════════════════════════════════════════ VIDEO MODAL -->
-<div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Product demo">
-  <div class="video-modal-inner">
-    <button class="modal-close" aria-label="Close">×</button>
-    <div class="modal-video-area">
-      <!-- YouTube iframe — src is set by JS on open to avoid preloading -->
-      <iframe id="demo-video-frame"
-              class="demo-iframe"
-              src=""
-              title="Afera Product Demo"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-      <!-- Shown until a real YouTube ID is set in main.js (YOUTUBE_VIDEO_ID) -->
-      <div class="modal-yt-placeholder" id="modal-yt-placeholder">
-        <div class="yt-logo">
-          <svg viewBox="0 0 90 20" width="90" fill="white" opacity="0.9"><text y="18" font-size="18" font-family="sans-serif" font-weight="700">YouTube</text></svg>
-        </div>
-        <div class="yt-play-ring">
-          <svg viewBox="0 0 68 48" width="72" height="52"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
-        </div>
-        <div class="yt-title">Afera Product Demo</div>
-        <div class="yt-hint">Set <code>YOUTUBE_VIDEO_ID</code> in main.js to embed your video</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="main.js"></script>
 
