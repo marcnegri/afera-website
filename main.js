@@ -4,6 +4,7 @@ const translations = {
     nav: {
       features: "Features", contacts: "Contacts", deals: "Deals",
       marketing: "Marketing", pedro: "Pedro AI", pricing: "Pricing",
+      compare: "Compare",
       login: "Log in", tryfree: "Try for free ✨", menu: "Menu"
     },
     hero: {
@@ -155,11 +156,54 @@ const translations = {
       links: {
         dashboard: "Dashboard", contacts: "Contacts", deals: "Deals",
         accounting: "Accounting", digitalMarketing: "Digital Marketing", pedro: "Pedro AI",
-        about: "About", blog: "Blog", changelog: "Changelog", careers: "Careers",
+        about: "About", blog: "Blog", changelog: "Changelog", careers: "Careers", compare: "Compare",
         helpCenter: "Help Center", contactUs: "Contact Us", status: "Status", pricing: "Pricing"
       },
       copyright: "© {year} Afera. Made with ☕ and possibly too much determination.",
       privacy: "Privacy Policy", terms: "Terms of Service", cookies: "Cookie Policy"
+    },
+    trust: {
+      noCard: "No credit card required",
+      trial: "30-day free trial",
+      cancel: "Cancel anytime"
+    },
+    how: {
+      label: "How it works",
+      title: "Up and running in minutes.",
+      subtitle: "No onboarding call. No IT department. Just sign up and go.",
+      step1: { title: "Import your contacts", desc: "Upload a CSV or add contacts manually. Your entire network, organized and searchable in minutes." },
+      step2: { title: "Track deals & campaigns", desc: "Move deals through your pipeline, send email campaigns, and automate follow-ups — all from one place." },
+      step3: { title: "Close more, stress less", desc: "Pedro AI tells you what to do next. You focus on closing. Your accountant gets clean numbers. Everyone wins." },
+      cta: "Start for free — it takes 2 minutes ✨"
+    },
+    testimonials: {
+      label: "❤️ Loved by founders",
+      title: "Don't take our word for it.",
+      subtitle: "Here's what people who've survived the CRM wars have to say.",
+      t1: { quote: "\"We closed 3 deals in the first week just by having everything in one place. I had no idea my pipeline was that messy.\"", role: "Founder, Studio Bleu" },
+      t2: { quote: "\"Pedro suggested a follow-up I hadn't thought of. The client signed the next day. I'm not saying it's magic, but I'm not not saying it either.\"", role: "Sales Lead, TechStart AG" },
+      t3: { quote: "\"Finally a CRM I don't need to train my team on. They figured it out in an afternoon. My old CRM had a 40-page onboarding doc.\"", role: "CEO, Maison Lacroix" }
+    },
+    faq: {
+      label: "❓ FAQ",
+      title: "Questions you were about to Google.",
+      q1: "Is there really no credit card required?",
+      a1: "Really, truly, absolutely not. Sign up, get 30 days of full access, and only enter a card if you decide to subscribe. We're not into surprise charges.",
+      q2: "What happens after the 30-day trial?",
+      a2: "Your account pauses — no data is deleted. You can subscribe to continue, or export everything and walk away, no hard feelings. We'd rather earn your loyalty than lock you in.",
+      q3: "Can I import my existing contacts?",
+      a3: "Yes — CSV import is built in. If you're coming from HubSpot, Salesforce, or a spreadsheet (no judgment), you can import everything in a few clicks.",
+      q4: "Is my data safe?",
+      a4: "Yes. Your data is encrypted in transit and at rest, stored in EU data centers, and never sold to third parties. We take this seriously.",
+      q5: "How is Afera different from HubSpot or Salesforce?",
+      a5: "Afera is built for small teams who want everything in one place without a 6-month implementation project or per-seat pricing shock. No enterprise overhead — just the tools you actually use.",
+      q6: "Does it work in French?",
+      a6: "Oui, évidemment. The entire interface and this website are available in French. Just click 🇫🇷 FR in the top navigation."
+    },
+    sticky: {
+      title: "Ready to simplify your business?",
+      sub: "No credit card · 30-day free trial",
+      cta: "Start for free ✨"
     }
   },
 
@@ -167,6 +211,7 @@ const translations = {
     nav: {
       features: "Fonctionnalités", contacts: "Contacts", deals: "Affaires",
       marketing: "Marketing", pedro: "Pedro IA", pricing: "Tarifs",
+      compare: "Comparaison",
       login: "Connexion", tryfree: "Essai gratuit ✨", menu: "Menu"
     },
     hero: {
@@ -318,11 +363,54 @@ const translations = {
       links: {
         dashboard: "Tableau de bord", contacts: "Contacts", deals: "Affaires",
         accounting: "Comptabilité", digitalMarketing: "Marketing Digital", pedro: "Pedro IA",
-        about: "À propos", blog: "Blog", changelog: "Nouveautés", careers: "Carrières",
+        about: "À propos", blog: "Blog", changelog: "Nouveautés", careers: "Carrières", compare: "Comparaison",
         helpCenter: "Centre d'aide", contactUs: "Nous contacter", status: "Statut", pricing: "Tarifs"
       },
       copyright: "© {year} Afera. Fait avec ☕ et peut-être un peu trop de détermination.",
       privacy: "Politique de confidentialité", terms: "Conditions d'utilisation", cookies: "Politique des cookies"
+    },
+    trust: {
+      noCard: "Sans carte de crédit",
+      trial: "30 jours d'essai gratuit",
+      cancel: "Résiliable à tout moment"
+    },
+    how: {
+      label: "Comment ça marche",
+      title: "Opérationnel en quelques minutes.",
+      subtitle: "Pas de démo obligatoire. Pas d'équipe IT. Inscrivez-vous et c'est parti.",
+      step1: { title: "Importez vos contacts", desc: "Importez un CSV ou ajoutez des contacts manuellement. Tout votre réseau, organisé et consultable en quelques minutes." },
+      step2: { title: "Gérez deals & campagnes", desc: "Faites avancer les affaires, envoyez des campagnes email et automatisez les relances — depuis un seul endroit." },
+      step3: { title: "Concluez plus, stressez moins", desc: "Pedro IA vous dit quoi faire ensuite. Vous vous concentrez sur la vente. Votre comptable reçoit des chiffres propres. Tout le monde gagne." },
+      cta: "Commencer gratuitement — ça prend 2 minutes ✨"
+    },
+    testimonials: {
+      label: "❤️ Adoré par les fondateurs",
+      title: "Ne nous croyez pas sur parole.",
+      subtitle: "Voici ce que disent ceux qui ont survécu aux guerres des CRM.",
+      t1: { quote: "\"Nous avons conclu 3 affaires la première semaine juste en ayant tout au même endroit. Je n'avais aucune idée que mon pipeline était aussi chaotique.\"", role: "Fondatrice, Studio Bleu" },
+      t2: { quote: "\"Pedro a suggéré une relance à laquelle je n'avais pas pensé. Le client a signé le lendemain. Je ne dis pas que c'est de la magie, mais je ne dis pas que ça ne l'est pas non plus.\"", role: "Responsable commercial, TechStart AG" },
+      t3: { quote: "\"Enfin un CRM que je n'ai pas besoin de former toute mon équipe. Ils l'ont compris en une après-midi. Mon ancien CRM avait un guide d'intégration de 40 pages.\"", role: "PDG, Maison Lacroix" }
+    },
+    faq: {
+      label: "❓ FAQ",
+      title: "Les questions que vous étiez sur le point de Googler.",
+      q1: "Vraiment, aucune carte de crédit requise ?",
+      a1: "Vraiment. Inscrivez-vous, profitez de 30 jours d'accès complet, et n'entrez votre carte que si vous décidez de souscrire. Pas de frais surprises chez nous.",
+      q2: "Que se passe-t-il après les 30 jours d'essai ?",
+      a2: "Votre compte est suspendu — aucune donnée n'est supprimée. Vous pouvez souscrire pour continuer, ou tout exporter et partir, sans rancune. Nous préférons mériter votre fidélité.",
+      q3: "Puis-je importer mes contacts existants ?",
+      a3: "Oui — l'import CSV est intégré. Que vous veniez de HubSpot, Salesforce ou d'un tableur (sans jugement), vous pouvez tout importer en quelques clics.",
+      q4: "Mes données sont-elles sécurisées ?",
+      a4: "Oui. Vos données sont chiffrées en transit et au repos, stockées dans des centres de données européens, et jamais vendues à des tiers. Nous prenons ça au sérieux.",
+      q5: "En quoi Afera est-il différent de HubSpot ou Salesforce ?",
+      a5: "Afera est conçu pour les petites équipes qui veulent tout en un seul endroit sans un projet d'implémentation de 6 mois. Pas d'infrastructure enterprise — juste les outils que vous utilisez vraiment.",
+      q6: "Est-ce disponible en français ?",
+      a6: "Oui, évidemment. L'interface complète et ce site web sont disponibles en français. Cliquez simplement sur 🇫🇷 FR dans la navigation."
+    },
+    sticky: {
+      title: "Prêt à simplifier votre entreprise ?",
+      sub: "Sans carte de crédit · 30 jours d'essai",
+      cta: "Commencer gratuitement ✨"
     }
   }
 }
@@ -360,6 +448,7 @@ function applyTranslations() {
     btn.classList.toggle('active', btn.dataset.lang === currentLocale)
   })
   renderActiveTab()
+  updateVideoThumbnail()
   const ftitle = document.getElementById('features-title')
   if (ftitle) ftitle.innerHTML = t('features.title').replace('\n', '<br>')
   const list = document.getElementById('deal-features-list')
@@ -374,6 +463,7 @@ function setLocale(lang) {
   currentLocale = lang
   localStorage.setItem('afera-locale', lang)
   applyTranslations()
+  resetVideoPlayer()
 }
 
 // ─── Marketing tab mock UIs ───────────────────────────────────────────────────
@@ -593,15 +683,59 @@ function initTiltEffect() {
   })
 }
 
+// ─── FAQ accordion + Sticky CTA ───────────────────────────────────────────────
+function initFaqAndStickyCta() {
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q')?.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open')
+      document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'))
+      if (!isOpen) item.classList.add('open')
+    })
+  })
+
+  // Sticky CTA
+  const bar = document.getElementById('sticky-cta')
+  const closeBtn = document.getElementById('sticky-cta-close')
+  let dismissed = false
+  window.addEventListener('scroll', () => {
+    if (dismissed || !bar) return
+    bar.classList.toggle('visible', window.scrollY > 500)
+  }, { passive: true })
+  closeBtn?.addEventListener('click', () => {
+    dismissed = true
+    bar?.classList.remove('visible')
+  })
+}
+
 // ─── In-page video embed ──────────────────────────────────────────────────────
-const YOUTUBE_VIDEO_ID = 'qGZeGePAHg0'
+const YOUTUBE_VIDEO_IDS = { en: 'F5LvwP0voOo', fr: 'qGZeGePAHg0' }
+
+function getVideoId() {
+  return YOUTUBE_VIDEO_IDS[currentLocale] || YOUTUBE_VIDEO_IDS.en
+}
+
+function updateVideoThumbnail() {
+  const img = document.getElementById('demo-thumb-img')
+  if (!img) return
+  const id = getVideoId()
+  img.src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
+  img.onerror = () => { img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`; img.onerror = null }
+}
+
+function resetVideoPlayer() {
+  const overlay = document.getElementById('hero-video-overlay')
+  const iframe  = document.getElementById('hero-demo-iframe')
+  if (overlay) overlay.style.display = ''
+  if (iframe)  iframe.src = ''
+}
 
 function initVideoEmbed() {
   const overlay = document.getElementById('hero-video-overlay')
   const iframe  = document.getElementById('hero-demo-iframe')
   if (!overlay || !iframe) return
   overlay.addEventListener('click', () => {
-    iframe.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`
+    iframe.src = `https://www.youtube.com/embed/${getVideoId()}?autoplay=1&rel=0`
     overlay.style.display = 'none'
   })
   document.getElementById('watch-demo-btn')?.addEventListener('click', () => {
@@ -648,5 +782,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters()
   initTiltEffect()
   initVideoEmbed()
+  initFaqAndStickyCta()
   startTypewriter()
 })

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($path = \"c:\\\\Users\\\\marcn\\\\Proton Drive\\\\marcnegri\\\\My files\\\\Projects\\\\Afera\\\\website\\\\afera-website\"; Get-ChildItem -Path $path -Recurse -Force -ErrorAction SilentlyContinue | ForEach-Object { if \\($_.PSIsContainer\\) { Write-Output \"[DIR]  $\\($_.FullName\\)\" } else { Write-Output \"[FILE] $\\($_.FullName\\)\" } } | Sort-Object)"
+    ]
+  }
+}

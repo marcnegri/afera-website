@@ -13,10 +13,37 @@
   <meta charset="UTF-8" />
   <meta name="referrer" content="origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afera — The CRM that doesn't make you want to cry</title>
-  <meta name="description" content="Afera brings contacts, deals, accounting, and marketing into one place." />
+  <title>Afera — All-in-One CRM for Contacts, Deals & Marketing | Free Trial</title>
+  <meta name="description" content="Afera combines CRM, deal pipeline, accounting, email marketing, and AI in one app. Try free for 30 days — no credit card required." />
+  <link rel="canonical" href="https://afera.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://afera.io" />
+  <meta property="og:title" content="Afera — All-in-One CRM | Free 30-Day Trial" />
+  <meta property="og:description" content="Contacts, deals, accounting, email marketing & AI — all in one place. No credit card. No spreadsheets." />
+  <meta property="og:image" content="https://afera.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Afera — All-in-One CRM | Free 30-Day Trial" />
+  <meta name="twitter:description" content="Contacts, deals, accounting, email marketing & AI — all in one place. No credit card." />
+  <meta name="twitter:image" content="https://afera.io/og-image.png" />
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Afera",
+    "url": "https://afera.io",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "All-in-one CRM with contacts, deal pipeline, accounting, email marketing, and AI assistant.",
+    "offers": [
+      { "@type": "Offer", "name": "Free Trial", "price": "0", "priceCurrency": "CHF", "description": "30-day free trial, no credit card required" },
+      { "@type": "Offer", "name": "Monthly", "price": "19.99", "priceCurrency": "CHF" },
+      { "@type": "Offer", "name": "Annual", "price": "199.9", "priceCurrency": "CHF" }
+    ],
+    "publisher": { "@type": "Organization", "name": "Afera", "url": "https://afera.io" }
+  }
+  </script>
 </head>
 <body>
 
@@ -35,6 +62,7 @@
       <a href="#marketing" data-i18n="nav.marketing">Marketing</a>
       <a href="#pedro"     data-i18n="nav.pedro">Pedro AI</a>
       <a href="#pricing"   data-i18n="nav.pricing">Pricing</a>
+      <a href="offre.html" data-i18n="nav.compare" style="color:var(--orange);font-weight:700">Compare</a>
     </nav>
 
     <div class="nav-cta">
@@ -69,6 +97,13 @@
       <a href="https://app.afera.io" class="btn-primary hero-cta" data-i18n="hero.startFree">Start for free ✨</a>
       <button class="btn-secondary" id="watch-demo-btn" data-i18n="hero.watchDemo">Watch demo ▶</button>
     </div>
+    <div class="trust-bar">
+      <span class="tb-item"><span class="tb-check">✓</span> <span data-i18n="trust.noCard">No credit card required</span></span>
+      <span class="tb-dot">·</span>
+      <span class="tb-item"><span class="tb-check">✓</span> <span data-i18n="trust.trial">30-day free trial</span></span>
+      <span class="tb-dot">·</span>
+      <span class="tb-item"><span class="tb-check">✓</span> <span data-i18n="trust.cancel">Cancel anytime</span></span>
+    </div>
 
     <div class="hero-stats">
       <div class="stat">
@@ -100,7 +135,7 @@
                 allowfullscreen="allowfullscreen"
                 referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <div class="demo-overlay" id="hero-video-overlay">
-          <img src="https://img.youtube.com/vi/qGZeGePAHg0/maxresdefault.jpg" alt="Afera Demo" class="demo-thumb" onerror="this.src='https://img.youtube.com/vi/qGZeGePAHg0/hqdefault.jpg'" />
+          <img id="demo-thumb-img" src="https://img.youtube.com/vi/qGZeGePAHg0/maxresdefault.jpg" alt="Afera Demo" class="demo-thumb" />
           <button class="demo-play" aria-label="Play demo video">
             <svg viewBox="0 0 68 48" width="72" height="51">
               <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/>
@@ -110,6 +145,42 @@
         </div>
       </div>
     </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ HOW IT WORKS -->
+<section class="how-section">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label" data-i18n="how.label">How it works</span>
+      <h2 class="section-title" data-i18n="how.title">Up and running in minutes.</h2>
+      <p class="section-subtitle" data-i18n="how.subtitle">No onboarding call. No IT department. Just sign up and go.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step" data-animate data-delay="1">
+        <div class="how-step-number">01</div>
+        <div class="how-step-icon">📥</div>
+        <h3 class="how-step-title" data-i18n="how.step1.title">Import your contacts</h3>
+        <p class="how-step-desc" data-i18n="how.step1.desc">Upload a CSV or add contacts manually. Your entire network, organized and searchable in minutes.</p>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-animate data-delay="2">
+        <div class="how-step-number">02</div>
+        <div class="how-step-icon">🤝</div>
+        <h3 class="how-step-title" data-i18n="how.step2.title">Track deals & campaigns</h3>
+        <p class="how-step-desc" data-i18n="how.step2.desc">Move deals through your pipeline, send email campaigns, and automate follow-ups — all from one place.</p>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-animate data-delay="3">
+        <div class="how-step-number">03</div>
+        <div class="how-step-icon">🚀</div>
+        <h3 class="how-step-title" data-i18n="how.step3.title">Close more, stress less</h3>
+        <p class="how-step-desc" data-i18n="how.step3.desc">Pedro AI tells you what to do next. You focus on closing. Your accountant gets clean numbers. Everyone wins.</p>
+      </div>
+    </div>
+    <div class="how-cta" data-animate>
+      <a href="https://app.afera.io" class="btn-primary" data-i18n="how.cta">Start for free — it takes 2 minutes ✨</a>
+    </div>
+  </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════ FEATURES OVERVIEW -->
@@ -122,37 +193,37 @@
     </div>
 
     <div class="features-grid">
-      <div class="feature-card card" style="--accent:#ff6b35" data-animate data-delay="1">
+      <div class="feature-card" style="--accent:#ff6b35" data-animate data-delay="1">
         <div class="feature-icon">📊</div>
         <h3 class="feature-title" data-i18n="features.dashboard.title">Dashboard</h3>
         <p class="feature-desc"   data-i18n="features.dashboard.desc"></p>
         <a href="#contacts" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
       </div>
-      <div class="feature-card card" style="--accent:#3b82f6" data-animate data-delay="2">
+      <div class="feature-card" style="--accent:#3b82f6" data-animate data-delay="2">
         <div class="feature-icon">👥</div>
         <h3 class="feature-title" data-i18n="features.contacts.title">Contacts</h3>
         <p class="feature-desc"   data-i18n="features.contacts.desc"></p>
         <a href="#contacts" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
       </div>
-      <div class="feature-card card" style="--accent:#10b981" data-animate data-delay="3">
+      <div class="feature-card" style="--accent:#10b981" data-animate data-delay="3">
         <div class="feature-icon">🤝</div>
         <h3 class="feature-title" data-i18n="features.deals.title">Deals</h3>
         <p class="feature-desc"   data-i18n="features.deals.desc"></p>
         <a href="#deals" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
       </div>
-      <div class="feature-card card" style="--accent:#f59e0b" data-animate data-delay="4">
+      <div class="feature-card" style="--accent:#f59e0b" data-animate data-delay="4">
         <div class="feature-icon">💰</div>
         <h3 class="feature-title" data-i18n="features.accounting.title">Accounting</h3>
         <p class="feature-desc"   data-i18n="features.accounting.desc"></p>
         <a href="#accounting" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
       </div>
-      <div class="feature-card card" style="--accent:#8b5cf6" data-animate data-delay="5">
+      <div class="feature-card" style="--accent:#8b5cf6" data-animate data-delay="5">
         <div class="feature-icon">🚀</div>
         <h3 class="feature-title" data-i18n="features.marketing.title">Digital Marketing</h3>
         <p class="feature-desc"   data-i18n="features.marketing.desc"></p>
         <a href="#marketing" class="feature-link"><span data-i18n="features.learnMore">Learn more</span> <span>→</span></a>
       </div>
-      <div class="feature-card card pedro-feature-card" style="--accent:#ec4899" data-animate data-delay="6">
+      <div class="feature-card" style="--accent:#ec4899" data-animate data-delay="6">
         <div class="feature-icon">🤖</div>
         <h3 class="feature-title" data-i18n="features.pedro.title">Pedro AI</h3>
         <p class="feature-desc"   data-i18n="features.pedro.desc"></p>
@@ -424,6 +495,52 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════ TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label" data-i18n="testimonials.label">❤️ Loved by founders</span>
+      <h2 class="section-title" data-i18n="testimonials.title">Don't take our word for it.</h2>
+      <p class="section-subtitle" data-i18n="testimonials.subtitle">Here's what people who've survived the CRM wars have to say.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card card" data-animate data-delay="1">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-quote" data-i18n="testimonials.t1.quote">"We closed 3 deals in the first week just by having everything in one place. I had no idea my pipeline was that messy."</p>
+        <div class="tc-author">
+          <div class="tc-avatar">SM</div>
+          <div>
+            <div class="tc-name">Sarah M.</div>
+            <div class="tc-role" data-i18n="testimonials.t1.role">Founder, Studio Bleu</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card card featured-testimonial" data-animate data-delay="2">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-quote" data-i18n="testimonials.t2.quote">"Pedro suggested a follow-up I hadn't thought of. The client signed the next day. I'm not saying it's magic, but I'm not not saying it either."</p>
+        <div class="tc-author">
+          <div class="tc-avatar" style="background:#3b82f6">TK</div>
+          <div>
+            <div class="tc-name">Thomas K.</div>
+            <div class="tc-role" data-i18n="testimonials.t2.role">Sales Lead, TechStart AG</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card card" data-animate data-delay="3">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-quote" data-i18n="testimonials.t3.quote">"Finally a CRM I don't need to train my team on. They figured it out in an afternoon. My old CRM had a 40-page onboarding doc."</p>
+        <div class="tc-author">
+          <div class="tc-avatar" style="background:#10b981">ML</div>
+          <div>
+            <div class="tc-name">Marie L.</div>
+            <div class="tc-role" data-i18n="testimonials.t3.role">CEO, Maison Lacroix</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════════════ PRICING -->
 <section class="pricing-section" id="pricing">
   <div class="container">
@@ -511,6 +628,42 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════ FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label" data-i18n="faq.label">❓ FAQ</span>
+      <h2 class="section-title" data-i18n="faq.title">Questions you were about to Google.</h2>
+    </div>
+    <div class="faq-list" data-animate>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q1">Is there really no credit card required?</button>
+        <div class="faq-a"><p data-i18n="faq.a1">Really, truly, absolutely not. Sign up, get 30 days of full access, and only enter a card if you decide to subscribe. We're not into surprise charges.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q2">What happens after the 30-day trial?</button>
+        <div class="faq-a"><p data-i18n="faq.a2">Your account pauses — no data is deleted. You can subscribe to continue, or export everything and walk away, no hard feelings. We'd rather earn your loyalty than lock you in.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q3">Can I import my existing contacts?</button>
+        <div class="faq-a"><p data-i18n="faq.a3">Yes — CSV import is built in. If you're coming from HubSpot, Salesforce, or a spreadsheet (no judgment), you can import everything in a few clicks.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q4">Is my data safe?</button>
+        <div class="faq-a"><p data-i18n="faq.a4">Yes. Your data is encrypted in transit and at rest, stored in EU data centers, and never sold to third parties. We take this seriously.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q5">How is Afera different from HubSpot or Salesforce?</button>
+        <div class="faq-a"><p data-i18n="faq.a5">Afera is built for small teams who want everything in one place without a 6-month implementation project or per-seat pricing shock. No enterprise overhead — just the tools you actually use.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q6">Does it work in French?</button>
+        <div class="faq-a"><p data-i18n="faq.a6">Oui, évidemment. The entire interface and this website are available in French. Just click 🇫🇷 FR in the top navigation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════════════ CTA -->
 <section class="cta-section">
   <div class="container">
@@ -566,6 +719,7 @@
           <li><a href="#" data-i18n="footer.links.blog">Blog</a></li>
           <li><a href="#" data-i18n="footer.links.changelog">Changelog</a></li>
           <li><a href="#" data-i18n="footer.links.careers">Careers</a></li>
+          <li><a href="offre.html" data-i18n="footer.links.compare">Compare</a></li>
         </ul>
       </div>
 
@@ -592,6 +746,18 @@
 </footer>
 
 <!-- ═══════════════════════════════════════════════════════ VIDEO MODAL -->
+
+<!-- ═══════════════════════════════════════════════════════ STICKY CTA -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text">
+      <strong data-i18n="sticky.title">Ready to simplify your business?</strong>
+      <span class="sticky-cta-sub" data-i18n="sticky.sub">No credit card · 30-day free trial</span>
+    </div>
+    <a href="https://app.afera.io" class="btn-primary sticky-cta-btn" data-i18n="sticky.cta">Start for free ✨</a>
+    <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">✕</button>
+  </div>
+</div>
 
 <script src="main.js"></script>
 
